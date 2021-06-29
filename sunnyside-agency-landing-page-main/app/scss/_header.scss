@@ -1,0 +1,31 @@
+.header {
+    background: url('../../images/desktop/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   
+    
+    // Mobile menu toggle
+    &__toggle {
+        > span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: $white;
+            // transition: all 300ms ease-in-out;
+            // transform-origin: 3px 1px;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        } 
+    }
+
+    .heroText {
+        font-family: 'Fraunces';
+        font-size: 2.5rem;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+}
