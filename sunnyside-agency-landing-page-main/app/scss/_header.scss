@@ -4,6 +4,11 @@
     background-repeat: no-repeat;
     background-position: center center;
    
+    @include breakpoint-up(large) {
+        background: url('../../images/desktop/image-header.jpg');
+        background-size: contain;
+        background-position: 
+    }
     
     // Mobile menu toggle
     &__toggle {
@@ -18,6 +23,28 @@
                 margin-bottom: 5px;
             }
         } 
+    }
+
+    &__links {
+        
+
+        a {
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: $white;
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+
+            &:last-child {
+                font-family: 'Fraunces', sans-serif;
+                font-size: 0.9375rem;
+                text-transform: uppercase;
+                color: $veryDarkDesaturatedBlue;
+            }
+        }
     }
 
     .heroText {
@@ -36,5 +63,9 @@
         display: flex;
         justify-content: center;
         padding-bottom: 8.375rem;
+
+        @include breakpoint-up(large) {
+            padding-bottom: 20.5rem;
+        }
     }
 }
