@@ -4,10 +4,16 @@
     background-repeat: no-repeat;
     background-position: center center;
    
+    @include breakpoint-up(medium) {
+        background-position: 50% 75%;
+    }
+
     @include breakpoint-up(large) {
         background: url('../../images/desktop/image-header.jpg');
-        background-size: contain;
-        background-position: 
+        background-size: cover;
+        background-position: bottom;
+        
+        
     }
     
     // Mobile menu toggle
@@ -51,12 +57,16 @@
         font-family: 'Fraunces';
         font-size: 2.5rem;
         font-weight: 900;
-        letter-spacing: 6px;
+        letter-spacing: 10px;
         color: $white;
         text-transform: uppercase;
         text-align: center;
         padding-top: 3.3125rem;
         padding-bottom: 3.875rem;
+    }
+
+    @include breakpoint-up(large) {
+        font-size: 3.5rem;
     }
 
     .arrowContainer {

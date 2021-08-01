@@ -88,10 +88,17 @@ body {
   background-position: center center;
 }
 
+@media (min-width: 40em) {
+  .header {
+    background-position: 50% 75%;
+  }
+}
+
 @media (min-width: 64em) {
   .header {
     background: url("../../images/desktop/image-header.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-position: bottom;
   }
 }
 
@@ -129,12 +136,18 @@ body {
   font-family: 'Fraunces';
   font-size: 2.5rem;
   font-weight: 900;
-  letter-spacing: 6px;
+  letter-spacing: 10px;
   color: white;
   text-transform: uppercase;
   text-align: center;
   padding-top: 3.3125rem;
   padding-bottom: 3.875rem;
+}
+
+@media (min-width: 64em) {
+  .header {
+    font-size: 3.5rem;
+  }
 }
 
 .header .arrowContainer {
