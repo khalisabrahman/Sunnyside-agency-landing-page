@@ -57,6 +57,7 @@ body {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-jc-sb {
@@ -160,5 +161,93 @@ body {
   .header .arrowContainer {
     padding-bottom: 20.5rem;
   }
+}
+
+.features {
+  text-align: center;
+}
+
+.features__image {
+  width: 100%;
+}
+
+.features__item {
+  background: white;
+}
+
+.features h2 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-family: 'Fraunces';
+  color: #23303e;
+  padding-bottom: 2rem;
+}
+
+.features p {
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #818498;
+  padding-bottom: 2.75rem;
+}
+
+.features .learnMore {
+  font-family: 'Fraunces';
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  color: #23303e;
+  cursor: pointer;
+}
+
+.features .learnMoreLine {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  height: 10px;
+  width: 8.375rem;
+  bottom: -8px;
+  background: #FAD400;
+  border-radius: 5px;
+}
+
+.features .learnMoreLinePink {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  height: 10px;
+  width: 8.375rem;
+  bottom: -8px;
+  background: #fe7867;
+  border-radius: 5px;
+}
+
+.features .graphicDesign {
+  background: url("../../images/mobile/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.features .graphicTitle {
+  padding-top: 22.9375rem;
+  color: #25564b;
+}
+
+.features .graphicText {
+  font-size: 1rem;
+  color: #25564b;
+}
+
+.features .photography {
+  background: url("../../images/mobile/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.features .photographyTitle {
+  padding-top: 22.9375rem;
+  color: #19536b;
+}
+
+.features .photographyText {
+  font-size: 1rem;
+  color: #19536b;
 }
 /*# sourceMappingURL=style.css.map */

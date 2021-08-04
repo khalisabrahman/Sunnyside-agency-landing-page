@@ -1,0 +1,88 @@
+.features {
+    text-align: center;
+
+    &__image {
+        width: 100%
+    }
+
+    &__item {
+        background: $white;
+    }
+
+    h2 {
+        padding-top: 2rem;
+        font-size: 2rem;
+        font-family: 'Fraunces';
+        color: $veryDarkDesaturatedBlue;
+        padding-bottom: 2rem;
+    }
+
+    p {
+        font-family: 'Barlow';
+        font-weight: 600;
+        font-size: 1.125rem;
+        color: $darkGrayishBlue;
+        padding-bottom: 2.75rem;
+    }
+
+    .learnMore {
+        font-family: 'Fraunces';
+        font-size: 0.9375rem;
+        text-transform: uppercase;
+        color: $veryDarkDesaturatedBlue;
+        cursor: pointer;
+    }
+
+    .learnMoreLine {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        height: 10px;
+        width: 8.375rem;
+        bottom: -8px;
+        background: #FAD400;
+        border-radius: 5px;
+    }
+
+    .learnMoreLinePink {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        height: 10px;
+        width: 8.375rem;
+        bottom: -8px;
+        background: $softRed;
+        border-radius: 5px;
+    }
+
+    .graphicDesign {
+        background: url("../../images/mobile/image-graphic-design.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .graphicTitle {
+        padding-top: 22.9375rem;
+        color: $darkDesaturatedCyan;
+    }
+
+    .graphicText {
+        font-size: 1rem;
+        color: $darkDesaturatedCyan;
+    }
+
+    .photography {
+        background: url("../../images/mobile/image-photography.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .photographyTitle {
+        padding-top: 22.9375rem;
+        color: $darkBlue;
+    }
+
+    .photographyText {
+        font-size: 1rem;
+        color: $darkBlue;
+    }
+
+}
+
