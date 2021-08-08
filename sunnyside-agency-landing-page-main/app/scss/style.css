@@ -175,6 +175,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr;
     grid-template-areas: "transformText transformPic" "standoutPic standoutText" "graphicDesign photography";
+    text-align: left;
   }
 }
 
@@ -184,6 +185,14 @@ body {
 
 .features__item {
   background: white;
+}
+
+@media (min-width: 60.4375em) {
+  .features__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .features .transform {
@@ -218,6 +227,16 @@ body {
   }
 }
 
+@media (min-width: 60.4375em) {
+  .features h2 {
+    font-size: 2.5rem;
+    align-self: flex-start;
+    padding-left: 2.8125rem;
+    padding-bottom: 3.6875rem;
+    padding-right: 2.8125rem;
+  }
+}
+
 .features p {
   font-family: 'Barlow';
   font-weight: 600;
@@ -233,12 +252,34 @@ body {
   }
 }
 
+@media (min-width: 60.4375em) {
+  .features p {
+    font-size: 1.125rem;
+    padding-left: 2.8125rem;
+    padding-right: 2.8125rem;
+    padding-bottom: 3.25rem;
+  }
+}
+
 .features .learnMore {
   font-family: 'Fraunces';
   font-size: 0.9375rem;
   text-transform: uppercase;
   color: #23303e;
   cursor: pointer;
+}
+
+@media (min-width: 40em) {
+  .features .learnMore {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 60.4375em) {
+  .features .learnMore {
+    padding-left: 2.8125rem;
+    padding-right: 2.8125rem;
+  }
 }
 
 .features .learnMoreLine {
@@ -254,6 +295,14 @@ body {
 @media (min-width: 40em) {
   .features .learnMoreLine {
     margin-bottom: 0px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 60.4375em) {
+  .features .learnMoreLine {
+    margin-left: 2.8125rem;
+    margin-right: 2.8125rem;
   }
 }
 
@@ -270,6 +319,14 @@ body {
 @media (min-width: 40em) {
   .features .learnMoreLinePink {
     margin-bottom: 0px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 60.4375em) {
+  .features .learnMoreLinePink {
+    margin-left: 2.8125rem;
+    margin-right: 2.8125rem;
   }
 }
 

@@ -10,7 +10,9 @@
         grid-template-areas: 
         "transformText transformPic"
         "standoutPic standoutText"
-        "graphicDesign photography"
+        "graphicDesign photography";
+        text-align: left;
+        
     }
 
     &__image {
@@ -19,6 +21,12 @@
 
     &__item {
         background: $white;
+
+        @include breakpoint-up(xmedium) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
     }
     .transform {
         grid-area: transformPic; 
@@ -46,6 +54,14 @@
             padding-bottom: 1rem;
             font-size: 1.5rem;
         }
+
+        @include breakpoint-up(xmedium) {
+            font-size: 2.5rem;
+            align-self: flex-start;
+            padding-left: 2.8125rem;
+            padding-bottom: 3.6875rem;
+            padding-right: 2.8125rem;
+        }
     }
 
     p {
@@ -59,6 +75,13 @@
             font-size: 1rem;
             padding-bottom: 2rem;
         }
+
+        @include breakpoint-up(xmedium) {
+            font-size: 1.125rem;
+            padding-left: 2.8125rem;
+            padding-right: 2.8125rem;
+            padding-bottom: 3.25rem;
+        }
     }
 
     .learnMore {
@@ -67,6 +90,14 @@
         text-transform: uppercase;
         color: $veryDarkDesaturatedBlue;
         cursor: pointer;
+        @include breakpoint-up(medium) {
+            align-self: flex-start;
+        }
+
+        @include breakpoint-up(xmedium) {
+            padding-left: 2.8125rem;
+            padding-right: 2.8125rem;
+        }
     }
 
     .learnMoreLine {
@@ -80,6 +111,11 @@
 
         @include breakpoint-up(medium) {
             margin-bottom: 0px;
+            margin: 0;
+        }
+        @include breakpoint-up(xmedium) {
+            margin-left: 2.8125rem;
+            margin-right: 2.8125rem;
         }
     }
 
@@ -93,6 +129,11 @@
         border-radius: 5px;
         @include breakpoint-up(medium) {
             margin-bottom: 0px;
+            margin: 0;
+        }
+        @include breakpoint-up(xmedium) {
+            margin-left: 2.8125rem;
+            margin-right: 2.8125rem;
         }
     }
     .graphicTitle {
