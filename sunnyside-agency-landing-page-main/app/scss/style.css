@@ -173,7 +173,7 @@ body {
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "transformText transformPic" "standoutPic standoutText" "graphicDesign photography";
     text-align: left;
   }
@@ -211,7 +211,7 @@ body {
   grid-area: standoutText;
 }
 
-.features h2 {
+.features .featureTitle {
   padding-top: 2rem;
   font-size: 2rem;
   font-family: 'Fraunces';
@@ -220,7 +220,7 @@ body {
 }
 
 @media (min-width: 40em) {
-  .features h2 {
+  .features .featureTitle {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1.5rem;
@@ -228,16 +228,16 @@ body {
 }
 
 @media (min-width: 60.4375em) {
-  .features h2 {
+  .features .featureTitle {
     font-size: 2.5rem;
     align-self: flex-start;
     padding-left: 2.8125rem;
-    padding-bottom: 3.6875rem;
+    padding-bottom: 3.625rem;
     padding-right: 2.8125rem;
   }
 }
 
-.features p {
+.features .featureText {
   font-family: 'Barlow';
   font-weight: 600;
   font-size: 1.125rem;
@@ -246,14 +246,14 @@ body {
 }
 
 @media (min-width: 40em) {
-  .features p {
+  .features .featureText {
     font-size: 1rem;
     padding-bottom: 2rem;
   }
 }
 
 @media (min-width: 60.4375em) {
-  .features p {
+  .features .featureText {
     font-size: 1.125rem;
     padding-left: 2.8125rem;
     padding-right: 2.8125rem;
@@ -331,8 +331,25 @@ body {
 }
 
 .features .graphicTitle {
-  padding-top: 22.9375rem;
+  padding-top: 21.875rem;
+  padding-bottom: 2rem;
   color: #25564b;
+}
+
+@media (min-width: 60.4375em) {
+  .features .graphicTitle {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
+.features .graphicText {
+  font-family: 'Barlow';
+  font-size: 1rem;
+  color: #25564b;
+  padding-left: 9.4375rem;
+  padding-right: 9.4375rem;
+  text-align: center;
 }
 
 .features .graphicDesign {
@@ -342,9 +359,10 @@ body {
   grid-area: graphicDesign;
 }
 
-.features .graphicText {
-  font-size: 1rem;
-  color: #25564b;
+@media (min-width: 60.4375em) {
+  .features .graphicDesign {
+    background: url("../../images/desktop/image-graphic-design.jpg");
+  }
 }
 
 .features .photography {
@@ -354,13 +372,30 @@ body {
   grid-area: photography;
 }
 
+@media (min-width: 60.4375em) {
+  .features .photography {
+    background: url("../../images/desktop/image-photography.jpg");
+  }
+}
+
 .features .photographyTitle {
   padding-top: 22.9375rem;
   color: #19536b;
 }
 
+@media (min-width: 60.4375em) {
+  .features .photographyTitle {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
 .features .photographyText {
+  font-family: 'Barlow';
   font-size: 1rem;
   color: #19536b;
+  padding-left: 9.4375rem;
+  padding-right: 9.4375rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
