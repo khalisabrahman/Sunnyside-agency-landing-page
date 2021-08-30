@@ -164,8 +164,10 @@ body {
 }
 
 .features {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 19.5rem 27.3125rem 19.5rem 27.3125rem;
+  grid-template-areas: "transformPic" "transformText" "standoutPic" "standoutText";
   text-align: center;
 }
 
@@ -173,8 +175,8 @@ body {
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "transformText transformPic" "standoutPic standoutText" "graphicDesign photography";
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "transformText transformPic" "standoutPic standoutText";
     text-align: left;
   }
 }
@@ -221,8 +223,7 @@ body {
 
 @media (min-width: 40em) {
   .features .featureTitle {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     font-size: 1.5rem;
   }
 }
@@ -231,9 +232,9 @@ body {
   .features .featureTitle {
     font-size: 2.5rem;
     align-self: flex-start;
-    padding-left: 2.8125rem;
+    padding-left: 7.8125rem;
     padding-bottom: 3.625rem;
-    padding-right: 2.8125rem;
+    padding-right: 7.8125rem;
   }
 }
 
@@ -245,18 +246,11 @@ body {
   padding-bottom: 2.75rem;
 }
 
-@media (min-width: 40em) {
-  .features .featureText {
-    font-size: 1rem;
-    padding-bottom: 2rem;
-  }
-}
-
 @media (min-width: 60.4375em) {
   .features .featureText {
     font-size: 1.125rem;
-    padding-left: 2.8125rem;
-    padding-right: 2.8125rem;
+    padding-left: 7.8125rem;
+    padding-right: 7.8125rem;
     padding-bottom: 3.25rem;
   }
 }
@@ -272,13 +266,14 @@ body {
 @media (min-width: 40em) {
   .features .learnMore {
     align-self: flex-start;
+    padding-left: 1rem;
   }
 }
 
 @media (min-width: 60.4375em) {
   .features .learnMore {
-    padding-left: 2.8125rem;
-    padding-right: 2.8125rem;
+    padding-left: 7.8125rem;
+    padding-right: 7.8125rem;
   }
 }
 
@@ -294,15 +289,15 @@ body {
 
 @media (min-width: 40em) {
   .features .learnMoreLine {
+    margin-left: 1rem;
     margin-bottom: 0px;
-    margin: 0;
   }
 }
 
 @media (min-width: 60.4375em) {
   .features .learnMoreLine {
-    margin-left: 2.8125rem;
-    margin-right: 2.8125rem;
+    margin-left: 7.8125rem;
+    margin-right: 7.8125rem;
   }
 }
 
@@ -318,15 +313,15 @@ body {
 
 @media (min-width: 40em) {
   .features .learnMoreLinePink {
+    margin-left: 1rem;
     margin-bottom: 0px;
-    margin: 0;
   }
 }
 
 @media (min-width: 60.4375em) {
   .features .learnMoreLinePink {
-    margin-left: 2.8125rem;
-    margin-right: 2.8125rem;
+    margin-left: 7.8125rem;
+    margin-right: 7.8125rem;
   }
 }
 
@@ -343,13 +338,24 @@ body {
   }
 }
 
+@media (min-width: 87.5em) {
+  .features .graphicTitle {
+    padding-top: 21.875rem;
+  }
+}
+
 .features .graphicText {
   font-family: 'Barlow';
   font-size: 1rem;
   color: #25564b;
-  padding-left: 9.4375rem;
-  padding-right: 9.4375rem;
   text-align: center;
+}
+
+@media (min-width: 64em) {
+  .features .graphicText {
+    padding-left: 9.4375rem;
+    padding-right: 9.4375rem;
+  }
 }
 
 .features .graphicDesign {
@@ -359,7 +365,7 @@ body {
   grid-area: graphicDesign;
 }
 
-@media (min-width: 60.4375em) {
+@media (min-width: 87.5em) {
   .features .graphicDesign {
     background: url("../../images/desktop/image-graphic-design.jpg");
   }
@@ -372,14 +378,15 @@ body {
   grid-area: photography;
 }
 
-@media (min-width: 60.4375em) {
+@media (min-width: 87.5em) {
   .features .photography {
     background: url("../../images/desktop/image-photography.jpg");
   }
 }
 
 .features .photographyTitle {
-  padding-top: 22.9375rem;
+  padding-top: 21.875rem;
+  padding-bottom: 2rem;
   color: #19536b;
 }
 
@@ -390,12 +397,23 @@ body {
   }
 }
 
+@media (min-width: 87.5em) {
+  .features .photographyTitle {
+    padding-top: 21.875rem;
+  }
+}
+
 .features .photographyText {
   font-family: 'Barlow';
   font-size: 1rem;
   color: #19536b;
-  padding-left: 9.4375rem;
-  padding-right: 9.4375rem;
   text-align: center;
+}
+
+@media (min-width: 64em) {
+  .features .photographyText {
+    padding-left: 9.4375rem;
+    padding-right: 9.4375rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
