@@ -1,0 +1,51 @@
+.testimonials {
+
+    &__subtitle {
+        padding-top: 1rem;
+        font-family: 'Fraunces';
+        font-size: 1rem;
+        font-weight: 700;
+        color:$grayishBlue;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    
+}
+
+.testimonial {
+    padding-top: 4.25rem;
+    &__pic {
+        display: block;
+        height: 72px;
+        width: 72px;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        padding-bottom: 2rem;
+        font-family: 'Barlow';
+        font-size: 1.125rem;
+        color: $veryDarkGrayishBlue;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    &__name {
+        padding-bottom: 0.8125rem;
+        font-family: 'Fraunces';
+        font-size: 1rem;
+        color: $veryDarkDesaturatedBlue;
+        text-align: center;
+    }
+
+    &__job {
+        font-family: 'Barlow';
+        font-size: 0.875rem;
+        color: $grayishBlue;
+        text-align: center;
+    }
+}

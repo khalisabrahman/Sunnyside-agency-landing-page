@@ -467,4 +467,52 @@ body {
     font-size: 1rem;
   }
 }
+
+.testimonials__subtitle {
+  padding-top: 1rem;
+  font-family: 'Fraunces';
+  font-size: 1rem;
+  font-weight: 700;
+  color: #a7abae;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.testimonial {
+  padding-top: 4.25rem;
+}
+
+.testimonial__pic {
+  display: block;
+  height: 72px;
+  width: 72px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.testimonial__text {
+  padding-bottom: 2rem;
+  font-family: 'Barlow';
+  font-size: 1.125rem;
+  color: #5a636c;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.testimonial__name {
+  padding-bottom: 0.8125rem;
+  font-family: 'Fraunces';
+  font-size: 1rem;
+  color: #23303e;
+  text-align: center;
+}
+
+.testimonial__job {
+  font-family: 'Barlow';
+  font-size: 0.875rem;
+  color: #a7abae;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
