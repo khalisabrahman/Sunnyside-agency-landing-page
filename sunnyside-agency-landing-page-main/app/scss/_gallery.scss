@@ -1,0 +1,26 @@
+.gallery {
+
+    &__container {
+
+        display: grid;
+        gap: 0;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows: 1fr 1fr;
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(4, 25vw);
+            grid-template-rows: 1fr;
+        }
+
+        img {
+            height: auto;
+            width: 50vw;
+
+            @include breakpoint-up(medium) {
+                width: 25vw;
+            }
+        }
+    }
+
+
+}

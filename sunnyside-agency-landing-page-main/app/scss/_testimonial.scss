@@ -1,5 +1,18 @@
 .testimonials {
 
+    &__container {
+        padding-bottom: 7.8125rem;
+        @include breakpoint-up(xmedium) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.875rem;
+            
+        }
+    }
+
+    
+
     &__subtitle {
         padding-top: 1rem;
         font-family: 'Fraunces';
@@ -9,12 +22,20 @@
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 4px;
+
+        @include breakpoint-up(xmedium) {
+            padding-top: 7.125rem;
+            font-size: 1.25rem;
+        }
     }
 
     
 }
 
 .testimonial {
+    @include breakpoint-up(xmedium) {
+        width: 28%;
+    }
     padding-top: 4.25rem;
     &__pic {
         display: block;
