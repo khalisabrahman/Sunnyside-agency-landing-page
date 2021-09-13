@@ -18,6 +18,11 @@
             font-family: 'Barlow', sans-serif;
             color: $darkModerateCyan;
             cursor: pointer;
+            transition: all 150ms ease-in-out;
+
+            &:hover {
+                color: $white;
+            }
         }
     }
 
